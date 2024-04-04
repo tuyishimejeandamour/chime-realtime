@@ -1,73 +1,23 @@
 {
-  "cSpell.words": [
-    "arbtest",
-    "bolds",
-    "cids",
-    "clippy",
-    "collab",
-    "dhat",
-    "flate",
-    "fuzzer",
-    "gmax",
-    "heapless",
-    "idspan",
-    "insta",
-    "Itertools",
-    "lamports",
-    "Leeeon",
-    "LOGSTORE",
-    "napi",
-    "nextest",
-    "opgroup",
-    "oplog",
-    "opset",
-    "peekable",
-    "Peritext",
-    "reparent",
-    "RUSTFLAGS",
-    "smstring",
-    "thiserror",
-    "tinyvec",
-    "txns",
-    "typeparam",
-    "unbold",
-    "unexist",
-    "unmark",
-    "unmergeable",
-    "yspan"
-  ],
-  "rust-analyzer.runnableEnv": {
-    "RUST_BACKTRACE": "full",
-    "DEBUG": "*"
+  "search.exclude": {
+    "**/.sst": true
   },
-  "rust-analyzer.cargo.features": [
-    "test_utils"
-  ],
-  "editor.defaultFormatter": "rust-lang.rust-analyzer",
-  "rust-analyzer.server.extraEnv": {
-    "RUSTUP_TOOLCHAIN": "stable"
-  },
-  "editor.formatOnSave": true,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "FUTURE",
-    "PERF",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "explorer.fileNesting.patterns": {
-    "*.rs": "${capture}.excalidraw"
-  },
-  "excalidraw.theme": "dark",
-  "deno.enable": false,
-  "cortex-debug.variableUseNaturalFormat": true,
-  "[markdown]": {},
-  "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
-  "vitest.enable": true
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }

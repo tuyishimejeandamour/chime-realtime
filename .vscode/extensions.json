@@ -1,7 +1,7 @@
 {
-  "recommendations": [
-    "Gruntfuggly.todo-tree",
-    "rust-lang.rust-analyzer",
-    "markis.code-coverage"
-  ]
+    "recommendations": [
+        "myml.vscode-markdown-plantuml-preview",
+        "esbenp.prettier-vscode",
+        "jebbs.plantuml"
+    ]
 }
